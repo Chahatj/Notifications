@@ -2,6 +2,9 @@ package com.example.chahat.notifications;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
+
+import com.google.firebase.iid.FirebaseInstanceId;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -10,6 +13,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        
+        String token = FirebaseInstanceId.getInstance().getToken();
+        Log.d("token",token);
+
+
     }
 }
