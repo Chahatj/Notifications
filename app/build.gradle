@@ -29,6 +29,7 @@ dependencies {
     compile 'com.google.firebase:firebase-core:10.2.0'
     compile 'com.google.firebase:firebase-messaging:10.2.0'
     compile 'com.google.firebase:firebase-crash:10.2.0'
+    compile project(':volley')
 }
 
 apply plugin: 'com.google.gms.google-services'
