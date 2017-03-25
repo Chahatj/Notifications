@@ -1,14 +1,14 @@
 <?php
 
 $servername = "localhost";
-$username = "id1149884_notification";
-$password = "notification";
+$username = "Your Database Username";
+$password = "Your Database Password";
 
-    $conn = new PDO("mysql:host=$servername;dbname=id1149884_mydb", $username, $password);
+    $conn = new PDO("mysql:host=$servername;dbname=Your database id at phpMyAdmin", $username, $password);
     // set the PDO error mode to exception
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-define( 'API_ACCESS_KEY', 'AAAAsTBZMVI:APA91bHsAShx8HAytmg8lWwK6QaLPOsm77mWLh9u5ijIW34Vg_r66MYibHvBstxkuF1uq1f2JVg_DONrHtnnd03TRAp2tawsl1GeVatQsU5TbKSCpr8_xz8lpdyp-5XZfzvdvhDr7rJc' );
+define( 'API_ACCESS_KEY', 'Api key cloud messaging' );
 
 $myToken = $_GET["token"];
 echo $myToken;
