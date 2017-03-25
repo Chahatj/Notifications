@@ -1,10 +1,10 @@
 <?php
 
  $servername = "localhost";
- $username = "id1149884_notification";
- $password = "notification";
+ $username = "Your Database Username";
+ $password = "Your Database Password";
 try {
-    $conn = new PDO("mysql:host=$servername;dbname=id1149884_mydb", $username, $password);
+    $conn = new PDO("mysql:host=$servername;dbname=Your database id in phpMyAdmin", $username, $password);
     // set the PDO error mode to exception
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
